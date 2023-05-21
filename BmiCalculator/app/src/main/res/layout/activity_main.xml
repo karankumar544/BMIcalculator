@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/height"
+        android:text="@string/height_in_m"
+        android:textSize="30sp"
+        android:textColor="#8F8C8C"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="70dp"
+        android:textStyle="bold"
+         />
+
+    <EditText
+        android:id="@+id/height_editText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/height"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:ems="6"
+        android:inputType="number"
+        android:textAlignment="center" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/weight_text"
+        android:text="@string/weight_text"
+        android:textSize="30sp"
+        android:textColor="#8F8C8C"
+        android:textStyle="bold"
+        android:layout_below="@+id/height_editText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"/>
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/weight_editText"
+        android:ems="6"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/weight_text"
+        android:layout_marginTop="15sp"
+        android:inputType="number"
+        android:textAlignment="center"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/result_button"
+        android:backgroundTint="@color/black"
+        android:layout_below="@+id/weight_editText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:textSize="15sp"
+        android:id="@+id/result_button"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/result_text"
+        android:text=""
+        android:textSize="25sp"
+        android:textColor="#8F8C8C"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/result_button"
+        android:layout_marginTop="20dp"/>
+
+</RelativeLayout>
